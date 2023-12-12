@@ -21,12 +21,14 @@ void b_in_exit(char **arr, char *buf)
 		x = atoi(arr[1]);
 		if (x < 0)
 		{
-			error("./hsh", arr[1]);
+			free(buf);
+			free(arr);
 			exit(2);
 		}
 		if (x == 0)
 		{
-			error("./hsh", arr[1]);
+			free(buf);
+			free(arr);
 			exit(2);
 		}
 		else
