@@ -19,7 +19,7 @@ void execute(char **arr, char *argv, char *buf, char *env[])
 	{
 		if (strcmp(arr[x], "exit") == 0)
 		{
-			b_in_exit(arr);
+			b_in_exit(arr, buf);
 			b += 1;
 		}
 		if (strcmp(arr[x], "env") == 0)

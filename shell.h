@@ -17,7 +17,7 @@ void execute(char **arr, char *argv, char *buf, char *env[]);
 int check_spaces(char *buf);
 int search_command(char *command);
 void error(char *argv, char *buf);
-void b_in_exit(char **arr);
+void b_in_exit(char **arr, char *buf);
 void b_in_env(char **env);
 
 #endif
