@@ -16,7 +16,7 @@ char **tokenization(char *str)
 	{
 		return (NULL);
 	}
-	token = my_strtok(str, del);
+	token = strtok(str, del);
 	while (token != NULL)
 	{
 		if (*token == '#')
@@ -32,7 +32,7 @@ char **tokenization(char *str)
 				return (NULL);
 			}
 		}
-		token = my_strtok(NULL, del);
+		token = strtok(NULL, del);
 	}
 	arr[i] = NULL;
 	return (arr);
