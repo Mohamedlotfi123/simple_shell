@@ -38,6 +38,8 @@ void execute(char **arr, char *argv, char *buf, char *env[])
 	if ((y == 0 || y == 1) && b == 0)
 	{
 		id = fork();
+		if (id == -1)
+			exit(EXIT_FAILURE);
 		if (id == 0)
 		{
 			if (y == 0)
