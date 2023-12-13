@@ -10,6 +10,7 @@
 #include <errno.h>
 
 int _strlen(char *str);
+char *my_strtok(char *str, char *del);
 void ready_to_go(void);
 char *read_command(int i);
 char **tokenization(char *str);
